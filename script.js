@@ -1,3 +1,5 @@
-button.addEventListener("click", function () {
-    alert("Welcome to FluexNest! Shopping feature is coming soon.");
+document.querySelector("button").addEventListener("click", function () {
+    document.querySelector(".products").scrollIntoView({
+        behavior: "smooth"
+    });
 });
