@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FluexNest | Premium Fashion</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluexNest | Premium Fashion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-<div class="logo">FluexNest</div>
+    <div class="logo">FluexNest</div>
 
-<nav>
-<a href="#">Home</a>
-<a href="#products">Men</a>
-<a href="#products">Women</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section class="hero">
-<h1>Welcome to FluexNest</h1>
-<p>Discover Premium Men's & Women's Fashion Collections</p>
-<a href="#products" class="btn">Shop Now</a>
+    <div class="hero-content">
+        <h1>Welcome to FluexNest</h1>
+        <p>Discover Premium Men's & Women's Fashion Collections</p>
+
+        <input type="text" id="searchBox" placeholder="Search Products...">
+
+        <br><br>
+
+        <button onclick="shopNow()">Shop Now</button>
+    </div>
 </section>
 
-<section class="products" id="products">
+<section id="products" class="products">
+
 <h2>Featured Categories</h2>
 
 <div class="product-grid">
 
-<div class="product-card">
-<img src="images/men.jpg" alt="Men Fashion">
+<div class="card">
+<img src="images/men.jpg" alt="Men">
 <h3>Men's Fashion</h3>
-<p class="price">Starting ₹999</p>
-<button class="buy-btn">Shop Now</button>
+<p>Shirts, Jeans, Shoes</p>
+<button>Add to Cart</button>
 </div>
 
-<div class="product-card">
-<img src="images/women.jpg" alt="Women Fashion">
+<div class="card">
+<img src="images/women.jpg" alt="Women">
 <h3>Women's Fashion</h3>
-<p class="price">Starting ₹799</p>
-<button class="buy-btn">Shop Now</button>
+<p>Dresses, Sarees & Tops</p>
+<button>Add to Cart</button>
 </div>
 
-<div class="product-card">
-<img src="images/shoes.jpg" alt="Accessories">
-<h3>Accessories</h3>
-<p class="price">Starting ₹499</p>
-<button class="buy-btn">Shop Now</button>
+<div class="card">
+<img src="images/shoes.jpg" alt="Shoes">
+<h3>Shoes</h3>
+<p>Latest Sneakers</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="images/bag.jpg" alt="Bag">
+<h3>Bags</h3>
+<p>Premium Hand Bags</p>
+<button>Add to Cart</button>
 </div>
 
 </div>
 
 </section>
 
-<section class="about" id="about">
+<section id="about" class="about">
+
 <h2>About FluexNest</h2>
 
 <p>
-FluexNest is a modern fashion marketplace offering stylish
-and affordable fashion for men and women across India.
+FluexNest is an online fashion marketplace offering premium clothing,
+shoes and accessories with modern design and affordable prices.
 </p>
 
 </section>
 
-<section class="contact" id="contact">
+<section id="contact" class="contact">
 
 <h2>Contact Us</h2>
 
@@ -75,24 +89,10 @@ and affordable fashion for men and women across India.
 
 <p><strong>Phone:</strong> +91 9777959362</p>
 
-<p><strong>Email:</strong>
-<a href="mailto:diptasundarbarik82@gmail.com">
-diptasundarbarik82@gmail.com
-</a>
-</p>
+<p><strong>Email:</strong> diptasundarbarik82@gmail.com</p>
 
-<p>
-<strong>GitHub:</strong>
-<a href="https://github.com/diptasundarbarik82-lab" target="_blank">
-github.com/diptasundarbarik82-lab
-</a>
-</p>
-
-<p>
-<strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/" target="_blank">
-LinkedIn Profile
-</a>
+<p><strong>GitHub:</strong><br>
+https://github.com/diptasundarbarik82-lab
 </p>
 
 </section>
