@@ -1,43 +1,199 @@
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
 
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
 header{
+    background:#111;
+    color:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
-    background:#111;
-    color:white;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:gold;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
+    margin-left:20px;
+    transition:.3s;
 }
 
+nav a:hover{
+    color:gold;
+}
+
+/* Hero */
+.hero{
+    background:#1c1c1c;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:gold;
+    color:#111;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffcc00;
+}
+
+/* Products */
 .products{
-    padding:60px 20px;
-    background:#f5f5f5;
+    padding:70px 40px;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:40px;
 }
 
 .product-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
-.card{
+.product-card{
     background:white;
+    border-radius:12px;
     padding:20px;
-    border-radius:10px;
-    text-align:center;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
-.card img{
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
     width:100%;
+    height:250px;
+    object-fit:cover;
     border-radius:10px;
+}
+
+.product-card h3{
+    margin:15px 0;
+}
+
+.price{
+    color:#e91e63;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.buy-btn{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.buy-btn:hover{
+    background:gold;
+    color:black;
+}
+
+/* About */
+.about{
+    background:white;
+    padding:60px 30px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* Contact */
+.contact{
+    background:#222;
+    color:white;
+    padding:60px 30px;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.contact a{
+    color:gold;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
 }
