@@ -1,28 +1,35 @@
-// FluexNest JavaScript
+function shopNow() {
+    document.getElementById("products").scrollIntoView({
+        behavior: "smooth"
+    });
+}
 
-// Shop Now buttons
-const buttons = document.querySelectorAll(".buy-btn");
+const cartButtons = document.querySelectorAll(".card button");
 
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        alert("Thank you for visiting FluexNest!\nShopping feature will be available soon.");
+cartButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        alert("Product added to cart successfully!");
     });
 });
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
+const searchBox = document.getElementById("searchBox");
 
-        const target = document.querySelector(this.getAttribute("href"));
+searchBox.addEventListener("keyup", function () {
 
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
+    const value = searchBox.value.toLowerCase();
+
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
         }
-    });
-});
 
-// Welcome message
-console.log("Welcome to FluexNest");
+    });
+
+});
