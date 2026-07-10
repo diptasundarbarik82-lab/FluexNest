@@ -11,12 +11,15 @@
 <header>
     <div class="logo">FluexNest</div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+    <a href="#" id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</a>
+</nav>
 </header>
 
 <section class="hero">
@@ -38,25 +41,25 @@
 
 <div class="product-grid">
 
-<div class="card">
-<img src="images/men.jpg" alt="Men">
-<h3>Men's Fashion</h3>
-<p>Shirts, Jeans, Shoes</p>
-<button>Add to Cart</button>
+<div class="product-card">
+    <img src="images/men.jpg" alt="Men's Fashion">
+    <h3>Men's Fashion</h3>
+    <p class="price">Starting ₹999</p>
+    <button onclick="buyProduct('Men Fashion')">Shop Now</button>
 </div>
 
-<div class="card">
-<img src="images/women.jpg" alt="Women">
-<h3>Women's Fashion</h3>
-<p>Dresses, Sarees & Tops</p>
-<button>Add to Cart</button>
+<div class="product-card">
+    <img src="images/women.jpg" alt="Women's Fashion">
+    <h3>Women's Fashion</h3>
+    <p class="price">Starting ₹799</p>
+    <button onclick="buyProduct('Women Fashion')">Shop Now</button>
 </div>
 
-<div class="card">
-<img src="images/shoes.jpg" alt="Shoes">
-<h3>Shoes</h3>
-<p>Latest Sneakers</p>
-<button>Add to Cart</button>
+<div class="product-card">
+    <img src="images/shoes.jpg" alt="Accessories">
+    <h3>Accessories</h3>
+    <p class="price">Starting ₹499</p>
+    <button onclick="buyProduct('Accessories')">Shop Now</button>
 </div>
 
 <div class="card">
